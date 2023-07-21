@@ -1,0 +1,284 @@
+$white1: rgb(248, 248, 240);
+$white1-2: rgb(144, 144, 136);
+$black1: rgb(50, 50, 50);
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Passion One", cursive;
+}
+body {
+  background-color: $white1;
+  padding-bottom: 5vh;
+}
+
+.newList {
+  height: 0;
+  //   height: 52vh;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  .item {
+    background: url("background.mp4");
+    background-size: auto;
+    width: 75vw;
+    height: 22vh;
+    margin: auto;
+    margin-top: 6vh;
+    border-radius: 8px;
+    .background {
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      height: 100%;
+      width: 100%;
+      display: flex;
+    }
+    .userContainer {
+      background: none;
+      height: 22vh;
+      width: 12vw;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      color: $white1;
+      border-right: 2px solid $white1;
+
+      .userName {
+        background: none;
+        margin: auto;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      }
+      img {
+        width: 16vh;
+        height: 16vh;
+        border-radius: 50%;
+        margin: auto;
+        border: 2px solid $white1;
+        font-size: 2rem;
+        display: none;
+      }
+      .userIcon {
+        width: 16vh;
+        height: 16vh;
+        margin: auto;
+        margin-top: 2.5vh;
+        border-radius: 50%;
+        border: 2px solid $white1;
+        text-align: center;
+        line-height: 15.5vh;
+        cursor: pointer;
+        transition: width, 0.3s, height 0.3s, margin-top 0.3s;
+      }
+      .userIcon:hover {
+        width: 18vh;
+        height: 18vh;
+        margin-top: 1.5vh;
+        line-height: 17vh;
+      }
+    }
+    .moviesContainer {
+      display: flex;
+      //   flex-direction: column;
+      font-size: 3rem;
+      color: $white1;
+      margin: auto;
+      gap: 10px;
+      cursor: pointer;
+      overflow-x: scroll;
+
+      img {
+        height: 22vh;
+        width: 9vw;
+        clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+        cursor: pointer;
+      }
+    }
+  }
+  .addNewUser {
+    background: url("background.mp4");
+    background-size: auto;
+    width: 75vw;
+    height: 21vh;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 8px;
+    .background {
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .addName {
+        border-bottom: 2px solid $white1;
+        height: 3rem;
+        width: 100%;
+
+        input {
+          font-size: 1.7rem;
+          background: none;
+          border: none;
+          color: $white1;
+          padding-left: 10px;
+          padding-top: 10px;
+        }
+
+        input:focus {
+          text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          outline: none;
+        }
+      }
+      .userImgs {
+        // margin-top: calc(3rem + 2px);
+        height: calc(21vh - 3rem);
+        overflow-x: scroll;
+        // overflow-y: hidden;
+        display: flex;
+        border-radius: 0 0 10px 10px;
+        // padding: 0 3px 3px 3px;
+
+        cursor: pointer;
+        img {
+          width: calc(21vh - 3rem);
+          height: 100%;
+        }
+        .refreshButton {
+          color: $white1;
+          height: calc(21vh - 3rem);
+          width: calc(75vw - 21vh + 3rem);
+          //   background-color: rgba(255, 255, 255, 0.4);
+          font-size: 3rem;
+          display: flex;
+          text-align: center;
+          i {
+            margin: auto;
+            transition: transform 0.3s ease;
+          }
+          img {
+            width: 16vh;
+            height: 16vh;
+            border-radius: 50%;
+            margin: auto;
+            border: 2px solid $white1;
+          }
+        }
+      }
+    }
+  }
+  .addNewMovies {
+    background: url("background.mp4");
+    background-size: auto;
+    width: 75vw;
+    height: 21vh;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 8px;
+    .background {
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .moviesImgs {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        border-radius: 10px;
+
+        background-color: none;
+        width: 100%;
+
+        img {
+          height: 22vh;
+          width: 9vw;
+          clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.guardarButton {
+  position: relative;
+  left: 12.5vw;
+  font-size: 1.6rem;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  color: $white1;
+  background: url("background.mp4");
+  //   height: 0;
+  overflow: hidden;
+  display: none;
+
+  .background {
+    border-radius: 5px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px 40px;
+
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+}
+.homeItemsContainer {
+  background-color: $white1;
+  .item {
+    background: url("background.mp4");
+    background-size: auto;
+    width: 75vw;
+    height: 22vh;
+    margin: auto;
+    margin-top: 6.5vh;
+    border-radius: 8px;
+    .background {
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      height: 100%;
+      width: 100%;
+      display: flex;
+    }
+    .userContainer {
+      background: none;
+      height: 22vh;
+      width: 12vw;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      color: $white1;
+
+      .userName {
+        background: none;
+        margin: auto;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      }
+      .userImg {
+        width: 16vh;
+        height: 16vh;
+        border-radius: 50%;
+        margin: auto;
+        border: 2px solid $white1;
+      }
+    }
+    .moviesContainer {
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: none;
+      width: 63vw;
+
+      .movie {
+        height: 22vh;
+        width: 9vw;
+        clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+      }
+    }
+  }
+}
