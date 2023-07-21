@@ -1,0 +1,18 @@
+$white1: rgb(248, 248, 240);
+$white1-2: rgb(144, 144, 136);
+$black1: rgb(50, 50, 50);
+* {
+  padding: 0;
+  margin: 0;
+  // background-color: $white1;
+  font-family: "Passion One", cursive;
+}
+
+.homeItemContainer {
+  background-color: $white1-2;
+  width: 70vw;
+  height: 20vh;
+  margin: auto;
+  margin-top: 6vh;
+  border-radius: 8px;
+}

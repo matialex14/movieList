@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Passion One", cursive;
+}
+
+.navBar {
+  background-color: rgb(248, 248, 240);
+}
+.navBar .navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  padding: 1.5vh 4vw;
+  padding-top: 3.5vh;
+}
+.navBar .navBarContainer ul {
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+}
+.navBar .navBarContainer .navBarLogo {
+  color: rgb(50, 50, 50);
+  text-decoration: none;
+}
+.navBar .navBarContainer .navBarLogo .logo {
+  margin-left: 10px;
+  transform: rotate(-10deg);
+}
+.navBar .navBarContainer .nav-links {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  padding-bottom: 1.4vh;
+  padding-top: 3.5vh;
+  transition: border-bottom 0.3s;
+}
+.navBar .navBarContainer .nav-links:hover {
+  border-bottom: 2px solid rgb(50, 50, 50);
+}/*# sourceMappingURL=NavBar.css.map */

@@ -1,0 +1,45 @@
+$white1: rgb(248, 248, 240);
+$white1-2: rgb(144, 144, 136);
+$black1: rgb(50, 50, 50);
+* {
+  padding: 0;
+  margin: 0;
+  // background-color: $white1;
+  font-family: "Passion One", cursive;
+}
+.navBar {
+  background-color: $white1;
+  .navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    // height: 13vh;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    padding: 1.5vh 4vw;
+    padding-top: 3.5vh;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2vw;
+    }
+    .navBarLogo {
+      color: $black1;
+      text-decoration: none;
+      //   margin: auto;
+      .logo {
+        margin-left: 10px;
+        transform: rotate(-10deg);
+      }
+    }
+    .nav-links {
+      text-decoration: none;
+      color: $black1;
+      padding-bottom: 1.4vh;
+      padding-top: 3.5vh;
+      transition: border-bottom 0.3s;
+    }
+    .nav-links:hover {
+      border-bottom: 2px solid $black1;
+    }
+  }
+}

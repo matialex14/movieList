@@ -5,16 +5,17 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -26,9 +27,109 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body class="index">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+
+    <div class="page">
+      <div class="newList haveIcon">
+        <div class="item">
+          <div class="background">
+            <div class="userContainer">
+
+              <i class= "userIcon fa-solid fa-user-plus"></i>
+              <img src="" alt="">
+              <p class="userName">
+              </p>
+            </div>
+            <div class="moviesContainer">
+              <i class="fa-solid fa-square-plus"></i><i class="fa-solid fa-square-plus"></i><i class="fa-solid fa-square-plus"></i>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="addNewUser">
+          <div class="background">
+            <div class="addName">
+              <input class="nameInput" type="text" placeholder="Ingresa tu nombre">
+            </div>
+              <div class="userImgs">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <div class="refreshButton" ><i class="fa-solid fa-arrows-rotate"></i></div>
+
+              </div>
+          </div>
+        </div>
+        <div class="addNewMovies">
+          <div class="background">
+       
+              <div class="moviesImgs">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+
+
+              </div>
+          </div>
+        </div>
+        
+      </div>
+      <button class="guardarButton" type="button">
+        <div class="background">
+
+          Guardar
+        </div>
+      </button>
+
+      <div class="homeItems">
+        <div class="homeItemsContainer">
+          <template id="templateHomeItem">
+            <div class="item">
+              <div class="background">
+                <div class="userContainer">
+                  <img src="" alt="" class="userImg" />
+                  <p class="userName">aaa</p>
+                </div>
+                <div class="moviesContainer">
+
+                </div>
+              </div>
+            </div>
+          </template>
+          <template id="templateMovies">
+            <div class="mask">
+              <img class="movie"></img>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -38,6 +139,8 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
+      
     -->
+    <script src="https://kit.fontawesome.com/44c7cda296.js" crossorigin="anonymous"></script>
   </body>
 </html>
